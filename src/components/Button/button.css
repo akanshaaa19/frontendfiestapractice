@@ -1,0 +1,24 @@
+.button{
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.outline{
+    background-color: transparent;
+    border: 2px solid var(--green);
+    color: var(--green);
+}
+
+.filled{
+    background-color: var(--green);
+    border: none;
+    color: #fff;
+}
+
+.light{
+    background: var(--green2);
+    border: none;
+    color: var(--green);
+}

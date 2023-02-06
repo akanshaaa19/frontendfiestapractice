@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import "./App.css";
+import NavigationBar from "./components/Navigation Bar/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <NavigationBar
+        name="go where"
+        navlinks={[
+          { title: "home", link: "/home" },
+          { title: "about", link: "/about" },
+          { title: "contact us", link: "/contact" },
+        ]}
+        getstarted={true}
+        login={true}
+      />
+      {/* <h1>df</h1> */}
+    </Fragment>
   );
 }
 
